@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 16, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/gabri/Documents/project/doc/next/user-management-app/pages/api/users.js"],"sourcesContent":["import apiClient from '../../../lib/apiClient';\r\n\r\nexport default async function handler(req, res) {\r\n  if (req.method !== 'GET') {\r\n    return res.status(405).json({ message: 'Method not allowed' });\r\n  }\r\n\r\n  try {\r\n    const { size = 10 } = req.query;\r\n    const users = await apiClient.getUsers(parseInt(size));\r\n    res.status(200).json(users);\r\n  } catch (error) {\r\n    res.status(500).json({ message: 'Error fetching users', error: error.message });\r\n  }\r\n}"],"names":[],"mappings":";;;;;;;;;;AAEe,eAAe,QAAQ,GAAG,EAAE,GAAG;IAC5C,IAAI,IAAI,MAAM,KAAK,OAAO;QACxB,OAAO,IAAI,MAAM,CAAC,KAAK,IAAI,CAAC;YAAE,SAAS;QAAqB;IAC9D;IAEA,IAAI;QACF,MAAM,EAAE,OAAO,EAAE,EAAE,GAAG,IAAI,KAAK;QAC/B,MAAM,QAAQ,MAAM,UAAU,QAAQ,CAAC,SAAS;QAChD,IAAI,MAAM,CAAC,KAAK,IAAI,CAAC;IACvB,EAAE,OAAO,OAAO;QACd,IAAI,MAAM,CAAC,KAAK,IAAI,CAAC;YAAE,SAAS;YAAwB,OAAO,MAAM,OAAO;QAAC;IAC/E;AACF","debugId":null}}]
+}

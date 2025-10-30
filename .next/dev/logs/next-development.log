@@ -1,0 +1,7 @@
+[00:00:02.434] Server  LOG      ✓ Ready in 1588ms
+[00:00:04.334] Server  LOG     Read 6 records from CSV
+[00:00:04.334] Server  LOG     Returning 6 records
+[00:00:04.354] Server  LOG     Fetching 10 users from Random User API...
+[00:00:04.600] Server  LOG     Successfully fetched users from Random User API
+[00:00:07.861] Server  LOG     Fetching 10 users from Random User API...
+[00:00:08.018] Server  LOG     Successfully fetched users from Random User API
