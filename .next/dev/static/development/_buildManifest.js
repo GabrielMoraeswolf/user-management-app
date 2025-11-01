@@ -13,7 +13,6 @@ self.__BUILD_MANIFEST = {
     "/_error",
     "/api/records",
     "/api/save",
-    "/api/search",
     "/api/users"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

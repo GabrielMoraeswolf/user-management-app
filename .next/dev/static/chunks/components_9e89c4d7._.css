@@ -1,0 +1,202 @@
+/* [project]/components/Home/styles/Home.module.css [client] (css) */
+.Home-module__wMiGxq__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Home-module__wMiGxq__header {
+  border-bottom: 2px solid #0070f3;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+.Home-module__wMiGxq__title {
+  color: #0070f3;
+  margin-bottom: 5px;
+}
+
+.Home-module__wMiGxq__description {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.Home-module__wMiGxq__errorMessage {
+  color: #c00;
+  background-color: #fee;
+  border: 1px solid #fcc;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.Home-module__wMiGxq__info {
+  color: #666;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.Home-module__wMiGxq__nav {
+  gap: 10px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.Home-module__wMiGxq__navButton {
+  color: #0070f3;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #0070f3;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.Home-module__wMiGxq__navButtonActive {
+  color: #fff;
+  background: #0070f3;
+}
+
+.Home-module__wMiGxq__controls {
+  gap: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.Home-module__wMiGxq__button {
+  color: #fff;
+  cursor: pointer;
+  background: #0070f3;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.Home-module__wMiGxq__button:disabled {
+  cursor: not-allowed;
+  background: #ccc;
+}
+
+.Home-module__wMiGxq__refresh {
+  color: #000;
+  background: #ffc107;
+  margin-bottom: 20px;
+}
+
+/* [project]/components/UserList/styles/UserList.module.css [client] (css) */
+.UserList-module__hS9nJW__userList {
+  gap: 20px;
+  display: grid;
+}
+
+.UserList-module__hS9nJW__userCard {
+  justify-content: between;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  display: flex;
+}
+
+.UserList-module__hS9nJW__userInfo {
+  flex: 1;
+}
+
+.UserList-module__hS9nJW__userInfo h3 {
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.UserList-module__hS9nJW__userInfo p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.UserList-module__hS9nJW__userActions {
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+}
+
+.UserList-module__hS9nJW__saveBtn {
+  color: #fff;
+  cursor: pointer;
+  background: #28a745;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.UserList-module__hS9nJW__editBtn {
+  color: #000;
+  cursor: pointer;
+  background: #ffc107;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.UserList-module__hS9nJW__deleteBtn {
+  color: #fff;
+  cursor: pointer;
+  background: #dc3545;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.UserList-module__hS9nJW__editForm {
+  width: 100%;
+}
+
+.UserList-module__hS9nJW__formRow {
+  align-items: center;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.UserList-module__hS9nJW__formRow label {
+  width: 100px;
+  font-weight: bold;
+}
+
+.UserList-module__hS9nJW__formRow input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  flex: 1;
+  padding: 5px;
+}
+
+.UserList-module__hS9nJW__formActions {
+  gap: 10px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.UserList-module__hS9nJW__cancel {
+  color: #fff;
+  cursor: pointer;
+  background: #6c757d;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.UserList-module__hS9nJW__emptyState {
+  text-align: center;
+  color: #666;
+  padding: 40px;
+}
+
+.UserList-module__hS9nJW__saveBtn:hover, .UserList-module__hS9nJW__editBtn:hover, .UserList-module__hS9nJW__deleteBtn:hover, .UserList-module__hS9nJW__cancel:hover {
+  opacity: .8;
+}
+
+.UserList-module__hS9nJW__saveBtn:disabled, .UserList-module__hS9nJW__editBtn:disabled, .UserList-module__hS9nJW__deleteBtn:disabled, .UserList-module__hS9nJW__cancel:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+/*# sourceMappingURL=components_9e89c4d7._.css.map*/

@@ -28,7 +28,6 @@ module.exports = mod;
 const fs = __turbopack_context__.r("[externals]/fs [external] (fs, cjs)");
 const path = __turbopack_context__.r("[externals]/path [external] (path, cjs)");
 const CSV_FILE = path.join(process.cwd(), 'data', 'users.csv');
-// Ensure data directory exists
 const ensureDataDirectory = ()=>{
     const dataDir = path.join(process.cwd(), 'data');
     if (!fs.existsSync(dataDir)) {
@@ -169,7 +168,6 @@ const appendToCSV = async (user)=>{
         throw error;
     }
 };
-// In the addUser function in /lib/csvHandler.js - ensure it handles the new structure
 const addUser = async (user)=>{
     try {
         await initializeCSV();
@@ -196,31 +194,7 @@ const addUser = async (user)=>{
         throw error;
     }
 };
-/*
-const addUser = async (user) => {
-  try {
-    await initializeCSV();
-    
-    const existingRecords = await readCSV();
-    console.log(`Found ${existingRecords.length} existing records before adding`);
-    
-    // Check for duplicate UID
-    const duplicateUser = existingRecords.find(record => record.uid === user.uid);
-    if (duplicateUser) {
-      throw new Error(`User with UID ${user.uid} already exists`);
-    }
-    
-    const newUser = await appendToCSV(user);
-    
-    const updatedRecords = await readCSV();
-    console.log(`Records after adding: ${updatedRecords.length}`);
-    
-    return newUser;
-  } catch (error) {
-    console.error('Error adding user to CSV:', error);
-    throw error;
-  }
-};*/ const updateUser = async (id, updatedUser)=>{
+const updateUser = async (id, updatedUser)=>{
     try {
         const records = await readCSV();
         console.log(`Looking for user with ID: ${id} in ${records.length} records`);
@@ -230,7 +204,6 @@ const addUser = async (user) => {
             throw new Error(`User with ID ${id} not found. Available IDs: ${records.map((r)=>r.id).join(', ')}`);
         }
         console.log(`Found user at index ${index}:`, records[index]);
-        // Update the user while preserving the ID and created_at
         records[index] = {
             ...records[index],
             ...updatedUser,
@@ -270,22 +243,6 @@ const deleteUser = async (id)=>{
         throw error;
     }
 };
-const searchUsers = async (query, fields = [
-    'first_name',
-    'last_name',
-    'email'
-])=>{
-    try {
-        const records = await readCSV();
-        const lowerQuery = query.toLowerCase().trim();
-        const results = records.filter((record)=>fields.some((field)=>record[field] && record[field].toLowerCase().includes(lowerQuery)));
-        console.log(`Search for "${query}" returned ${results.length} results`);
-        return results;
-    } catch (error) {
-        console.error('Error searching users:', error);
-        throw error;
-    }
-};
 const getStats = async ()=>{
     try {
         const records = await readCSV();
@@ -305,7 +262,6 @@ module.exports = {
     appendToCSV,
     updateUser,
     deleteUser,
-    searchUsers,
     getStats,
     writeCSV
 };

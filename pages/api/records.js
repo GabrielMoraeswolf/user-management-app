@@ -2,7 +2,7 @@
 import { readCSV, updateUser, deleteUser, initializeCSV } from '../../lib/csvHandler';
 
 export default async function handler(req, res) {
-  // Set CORS headers
+ 
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -17,13 +17,12 @@ export default async function handler(req, res) {
     case 'GET':
       try {
         const records = await readCSV();
-        console.log(`Returning ${records.length} records`);
         res.status(200).json(records);
       } catch (error) {
-        console.error('Error reading records:', error);
+        console.error('Erro ao ler os registros no arquivo CSV:', error);
         res.status(500).json({ 
           success: false,
-          message: 'Error reading records: ' + error.message 
+          message: 'Erro ao ler os registros no arquivo CSV: ' + error.message 
         });
       }
       break;
@@ -31,12 +30,11 @@ export default async function handler(req, res) {
     case 'PUT':
       try {
         const { id } = req.query;
-        console.log('Update request for ID:', id, 'with data:', req.body);
         
         if (!id) {
           return res.status(400).json({ 
             success: false,
-            message: 'User ID is required' 
+            message: 'O ID do usuário é obrigatório' 
           });
         }
         
@@ -44,14 +42,14 @@ export default async function handler(req, res) {
         
         res.status(200).json({
           success: true,
-          message: 'User updated successfully',
+          message: 'Usuário atualizado com sucesso',
           data: updatedUser
         });
       } catch (error) {
-        console.error('Error updating user:', error);
+        console.error('Erro ao atualizar o usuário:', error);
         res.status(500).json({ 
           success: false,
-          message: 'Error updating user: ' + error.message 
+          message: 'Erro ao atualizar o usuário:' + error.message 
         });
       }
       break;
@@ -59,25 +57,24 @@ export default async function handler(req, res) {
     case 'DELETE':
       try {
         const { id } = req.query;
-        console.log('Delete request for ID:', id);
         
         if (!id) {
           return res.status(400).json({ 
             success: false,
-            message: 'User ID is required' 
+            message: 'O ID do usuário é obrigatório' 
           });
         }
         
         await deleteUser(id);
         res.status(200).json({ 
           success: true,
-          message: 'User deleted successfully' 
+          message: 'Usuário excluído com sucesso' 
         });
       } catch (error) {
-        console.error('Error deleting user:', error);
+        console.error('Erro ao excluir o usuário:', error);
         res.status(500).json({ 
           success: false,
-          message: 'Error deleting user: ' + error.message 
+          message: 'Erro ao excluir o usuário:' + error.message 
         });
       }
       break;
@@ -85,7 +82,7 @@ export default async function handler(req, res) {
     default:
       res.status(405).json({ 
         success: false,
-        message: 'Method not allowed' 
+        message: 'Método não permitido' 
       });
   }
 }

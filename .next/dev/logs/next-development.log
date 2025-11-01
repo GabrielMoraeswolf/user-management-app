@@ -1,7 +1,24 @@
-[00:00:02.434] Server  LOG      ✓ Ready in 1588ms
-[00:00:04.334] Server  LOG     Read 6 records from CSV
-[00:00:04.334] Server  LOG     Returning 6 records
-[00:00:04.354] Server  LOG     Fetching 10 users from Random User API...
-[00:00:04.600] Server  LOG     Successfully fetched users from Random User API
-[00:00:07.861] Server  LOG     Fetching 10 users from Random User API...
-[00:00:08.018] Server  LOG     Successfully fetched users from Random User API
+[00:00:04.477] Server  LOG      ✓ Ready in 3s
+[00:00:10.478] Server  LOG     Read 8 records from CSV
+[00:00:10.478] Server  LOG     Returning 8 records
+[00:02:42.524] Server  LOG     Read 8 records from CSV
+[00:02:42.524] Server  LOG     Returning 8 records
+[00:02:42.560] Server  LOG      ✓ Compiled in 80ms
+[00:03:02.256] Server  LOG     Read 8 records from CSV
+[00:03:02.258] Server  LOG     Returning 8 records
+[00:03:04.127] Server  LOG     Fetching 10 users from Random User API...
+[00:03:04.367] Server  LOG     Successfully fetched users from Random User API
+[00:04:35.729] Server  LOG      ✓ Compiled in 32ms
+[00:04:35.748] Server  LOG     Read 8 records from CSV
+[00:04:35.749] Server  LOG     Returning 8 records
+[00:09:25.336] Browser ERROR   unhandledRejection: ReferenceError: setLoading is not defined
+[00:12:24.870] Server  LOG      ✓ Compiled in 61ms
+[00:14:38.179] Server  LOG      ✓ Compiled in 27ms
+[00:19:56.120] Server  LOG      ✓ Compiled in 21ms
+[00:33:49.394] Server  LOG      ✓ Compiled in 35ms
+[00:41:45.409] Server  LOG      ✓ Compiled in 49ms
+[00:41:59.769] Server  LOG      ✓ Compiled in 38ms
+[00:42:59.743] Server  LOG      ✓ Compiled in 33ms
+[00:42:59.831] Server  LOG     Returning 8 records
+[00:43:03.639] Server  LOG     Returning 8 records
+[00:46:55.404] Server  LOG      ✓ Compiled in 37ms

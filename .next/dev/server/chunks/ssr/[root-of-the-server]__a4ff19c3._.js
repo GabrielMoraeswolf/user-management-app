@@ -89,14 +89,6 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
             }
         }
     };
-    const handleSaveUser = async (user)=>{
-        setSavingId(user.uid);
-        try {
-            await onSave(user);
-        } finally{
-            setSavingId(null);
-        }
-    };
     const handleCancelEdit = ()=>{
         setEditingId(null);
         setEditForm({});
@@ -111,15 +103,15 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
             className: "empty-state",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                children: "📭 No users found"
+                children: "Nenhum usuário encontrado"
             }, void 0, false, {
                 fileName: "[project]/components/UserList.js",
-                lineNumber: 103,
+                lineNumber: 94,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/UserList.js",
-            lineNumber: 102,
+            lineNumber: 93,
             columnNumber: 7
         }, this);
     }
@@ -139,7 +131,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         children: "First Name:"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 116,
+                                        lineNumber: 107,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
@@ -149,13 +141,13 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         className: "jsx-f2b4b71320552ba3"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 117,
+                                        lineNumber: 108,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/UserList.js",
-                                lineNumber: 115,
+                                lineNumber: 106,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -166,7 +158,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         children: "Last Name:"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 124,
+                                        lineNumber: 115,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
@@ -176,13 +168,13 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         className: "jsx-f2b4b71320552ba3"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 125,
+                                        lineNumber: 116,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/UserList.js",
-                                lineNumber: 123,
+                                lineNumber: 114,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -193,7 +185,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         children: "Email:"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 132,
+                                        lineNumber: 123,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
@@ -203,13 +195,13 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         className: "jsx-f2b4b71320552ba3"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 133,
+                                        lineNumber: 124,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/UserList.js",
-                                lineNumber: 131,
+                                lineNumber: 122,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -220,7 +212,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         children: "Phone:"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 140,
+                                        lineNumber: 131,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("input", {
@@ -230,13 +222,13 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         className: "jsx-f2b4b71320552ba3"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 141,
+                                        lineNumber: 132,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/UserList.js",
-                                lineNumber: 139,
+                                lineNumber: 130,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -248,7 +240,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         children: "Save"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 148,
+                                        lineNumber: 139,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -257,19 +249,19 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         children: "Cancel"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 149,
+                                        lineNumber: 140,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/UserList.js",
-                                lineNumber: 147,
+                                lineNumber: 138,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/UserList.js",
-                        lineNumber: 114,
+                        lineNumber: 105,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
                         children: [
@@ -285,7 +277,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 155,
+                                        lineNumber: 146,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -296,7 +288,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Username:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 156,
+                                                lineNumber: 147,
                                                 columnNumber: 20
                                             }, this),
                                             " ",
@@ -304,7 +296,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 156,
+                                        lineNumber: 147,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -315,7 +307,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Email:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 157,
+                                                lineNumber: 148,
                                                 columnNumber: 20
                                             }, this),
                                             " ",
@@ -323,7 +315,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 157,
+                                        lineNumber: 148,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -334,7 +326,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Phone:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 158,
+                                                lineNumber: 149,
                                                 columnNumber: 20
                                             }, this),
                                             " ",
@@ -342,7 +334,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 158,
+                                        lineNumber: 149,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -353,7 +345,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Date of Birth:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 159,
+                                                lineNumber: 150,
                                                 columnNumber: 20
                                             }, this),
                                             " ",
@@ -361,7 +353,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 159,
+                                        lineNumber: 150,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -372,7 +364,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "UID:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 160,
+                                                lineNumber: 151,
                                                 columnNumber: 20
                                             }, this),
                                             " ",
@@ -380,7 +372,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 160,
+                                        lineNumber: 151,
                                         columnNumber: 17
                                     }, this),
                                     user.gender && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -391,7 +383,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Gender:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 161,
+                                                lineNumber: 152,
                                                 columnNumber: 36
                                             }, this),
                                             " ",
@@ -399,7 +391,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 161,
+                                        lineNumber: 152,
                                         columnNumber: 33
                                     }, this),
                                     user.nationality && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -410,7 +402,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Nationality:"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 162,
+                                                lineNumber: 153,
                                                 columnNumber: 41
                                             }, this),
                                             " ",
@@ -418,13 +410,13 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 162,
+                                        lineNumber: 153,
                                         columnNumber: 38
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/UserList.js",
-                                lineNumber: 154,
+                                lineNumber: 145,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -436,7 +428,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                         children: "Salvar no CSV"
                                     }, void 0, false, {
                                         fileName: "[project]/components/UserList.js",
-                                        lineNumber: 167,
+                                        lineNumber: 158,
                                         columnNumber: 19
                                     }, this),
                                     isSaved && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["Fragment"], {
@@ -447,7 +439,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Editar"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 176,
+                                                lineNumber: 167,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
@@ -456,7 +448,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                                 children: "Deletar"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/UserList.js",
-                                                lineNumber: 182,
+                                                lineNumber: 173,
                                                 columnNumber: 21
                                             }, this)
                                         ]
@@ -464,14 +456,14 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/UserList.js",
-                                lineNumber: 165,
+                                lineNumber: 156,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true)
                 }, user.uid || user.id, false, {
                     fileName: "[project]/components/UserList.js",
-                    lineNumber: 112,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, this)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$externals$5d2f$styled$2d$jsx$2f$style$2e$js__$5b$external$5d$__$28$styled$2d$jsx$2f$style$2e$js$2c$__cjs$29$__["default"], {
@@ -481,7 +473,7 @@ function UserList({ users, isSaved = false, onSave, onUpdate }) {
         ]
     }, void 0, true, {
         fileName: "[project]/components/UserList.js",
-        lineNumber: 110,
+        lineNumber: 101,
         columnNumber: 5
     }, this);
 }
