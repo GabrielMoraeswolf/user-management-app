@@ -1,6 +1,8 @@
 # User Management app
 ### The application displays a list of users obtained from the API and allows saving this data to a local CSV file. After saving,the user can edit or delete records directly from the file and can add new users to the internal database at any time.
 
+### 🇧🇷  - Esse aplicativo exibe uma lista de usuários obtida por meio da API e permite salvar esses dados em um arquivo CSV local. Após salvar, o usuário pode editar ou excluir registros diretamente do arquivo e adicionar novos usuários ao banco de dados interno a qualquer momento.
+
 
 <img width="1663" height="531" alt="Image" src="https://github.com/user-attachments/assets/437b998f-ea2e-4a8e-95e6-60d9b5ae14b9" />
 
@@ -15,6 +17,15 @@
     + npm run dev
 3. Go to http://localhost:3000 in your browser.
 
+## 🇧🇷  - Como executar o sistema:
+1 .No seu terminal, após baixar os arquivos, execute os comandos.
+    + npm install (para baixar as dependências)
+    + npm run dev
+3. No seu navegador acesse o link http://localhost:3000 .
+
+## API used:
++ https://randomuser.me/documentation
+
 ## Technologies Used:
 
 <table>
@@ -28,4 +39,4 @@
 
 
 ## Author:
-* Gabriel Rodigues de Moraes
+* Gabriel Rodrigues de Moraes
